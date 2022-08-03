@@ -36,3 +36,41 @@ button:hover > .button {
 h1 {
   text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+
+  button {
+    font-size: 14px;
+    width: 140px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+  }
+
+  .button {
+    width: 15px;
+    height: 15px;
+  }
+
+  .card-grid {
+    margin-top: 25px;
+    margin: 25px 10px 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .App {
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    margin: 10px 10px;
+  }
+}
