@@ -1,38 +1,38 @@
 .App {
-  text-align: center;
+  max-width: 860px;
+  margin: 40px auto;
+}
+button {
+  background: none;
+  width: 210px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #261700;
+  color: #FFD79D;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+}
+button:hover > .button {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  transform: rotate(33deg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  margin-right: 10px;
+  fill: #FFD79D;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  text-transform: uppercase;
 }
